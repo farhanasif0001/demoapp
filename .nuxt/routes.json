@@ -1,0 +1,14 @@
+[
+  {
+    "name": "dashboard",
+    "path": "/dashboard",
+    "component": "/Users/imranalikhan/Desktop/mywork/onlinedemoapp/demoapp/pages/dashboard.vue",
+    "chunkName": "pages/dashboard"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/imranalikhan/Desktop/mywork/onlinedemoapp/demoapp/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

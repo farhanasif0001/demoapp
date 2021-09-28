@@ -4,12 +4,32 @@
     <b-row class="main m-0">
         <b-col md="9" sm="12" class="pt-4 pl-5">
             <b-row class="maincard m-0">
-                <h6>
-                  🏡 Mes biens à traiter (10)
-                  &nbsp;&nbsp;<b-icon icon="arrow-right"></b-icon>
-                </h6>
+                <b-col>
+                    <b-row>
+                        <h6>
+                          🏡 Mes biens à traiter (10)
+                          &nbsp;&nbsp;<b-icon icon="arrow-right"></b-icon>
+                        </h6>
+                    </b-row>
+                    <b-row>
+                        <b-col>
+                            <Item
+                                v-for="item in items"
+                                :key="item.id"
+                                :maintext="item.maintext"
+                                :location="item.location"
+                                :values="item.values"
+                                :badges="item.badges"
+                                :contact="item.contact"
+                                :home="item.home"
+                                :cost="item.cost"
+                                :costdate="item.costdate"
+                            />
+                        </b-col>
+                    </b-row>
+                </b-col>
             </b-row>
-            <b-row class="m-0">
+            <b-row class="m-0 mt-5">
                 <b-col>
                     <b-row>
                         <h6>
@@ -35,7 +55,7 @@
                                 :progressColor="'#4E9E28'"
                             />
                         </b-col>
-                        <b-col md="auto">
+                        <b-col md="">
                             <BottomBoxTwo 
                                 :items="bottomBoxTwoItems"
                             />
@@ -111,7 +131,53 @@ export default {
                 text: 'Relances',
                 type: 'courrier',
                 icon: 'telephone'
-            }]
+            }],
+            items: [
+                {
+                    maintext: '10 rue du Normand de la Grange aux...',
+                    location: 'Paris, 03400',
+                    values: [
+                        {id: 1, icon: 'telephone'},
+                        {id: 2, icon: 'calendar'}
+                    ],
+                    badges: [
+                        {id: 1, icon: 'telephone', text: 'Appeler dans les 24h'},
+                        {id: 2, icon: 'door', text: 'Porte à porte dans les 24h'}
+                    ],
+                    contact: {
+                        text: '06 59 30 29 93',
+                        verified: false
+                    },
+                    home: {
+                        text: '< 6 mois',
+                        icon: 'home'
+                    },
+                    cost: '250 000 € - 265 000 €',
+                    costdate: 'le 20/02/2021'
+                },
+                {
+                    maintext: '10 rue du Normand de la Grange aux...',
+                    location: 'Paris, 03400',
+                    values: [
+                        {id: 1, icon: 'telephone'},
+                        {id: 2, icon: 'calendar'}
+                    ],
+                    badges: [
+                        {id: 1, icon: 'telephone', text: 'Appeler dans les 24h'},
+                        {id: 2, icon: 'door', text: 'Porte à porte dans les 24h'}
+                    ],
+                    contact: {
+                        text: '06 59 30 29 93',
+                        verified: false
+                    },
+                    home: {
+                        text: '< 6 mois',
+                        icon: 'home'
+                    },
+                    cost: '250 000 € - 265 000 €',
+                    costdate: 'le 20/02/2021'
+                }
+            ]
         }
     }
 }

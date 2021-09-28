@@ -1,0 +1,14 @@
+{
+  "BottomBox": {
+    "description": "Auto imported from components/BottomBox.vue"
+  },
+  "BottomBoxTwo": {
+    "description": "Auto imported from components/BottomBoxTwo.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "Item": {
+    "description": "Auto imported from components/Item.vue"
+  }
+}
