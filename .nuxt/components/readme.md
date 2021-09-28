@@ -10,3 +10,4 @@ You can directly use them in pages and other components without the need to impo
 - `<BottomBoxTwo>` | `<bottom-box-two>` (components/BottomBoxTwo.vue)
 - `<Header>` | `<header>` (components/Header.vue)
 - `<Item>` | `<item>` (components/Item.vue)
+- `<RightBox>` | `<right-box>` (components/RightBox.vue)

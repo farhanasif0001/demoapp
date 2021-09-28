@@ -29,7 +29,7 @@
                     </b-row>
                 </b-col>
             </b-row>
-            <b-row class="m-0 mt-5">
+            <b-row class="m-0 mt-4">
                 <b-col>
                     <b-row>
                         <h6>
@@ -75,8 +75,15 @@
                     </b-col>
                 </b-row>
                 <b-row>
-                    <b-col>
-                        
+                    <b-col class="rightsection">
+                        <p>Aujourd’hui</p>
+                        <RightBox
+                            v-for="contact in contacts"
+                            :key="contact.id"
+                            :maintext="contact.maintext"
+                            :contact="contact.contact"
+                            :duration="contact.duration"
+                        />
                     </b-col>
                 </b-row>
             </b-col>
@@ -87,7 +94,7 @@
 
 <style scoped>
     .main {
-        height: 100vh;
+        height: 80vh;
         width: 100%;
         background-color: #F7FAFC;
     }
@@ -95,8 +102,12 @@
         background-color: #FFFFFF;
     }
     .maincard {
-        max-height: 397px;
+        max-height: 350px;
+        overflow: auto;
         min-height: 70px;
+    }
+    .rightsection > p {
+        font-size: 16px;
     }
 </style>
 
@@ -159,7 +170,6 @@ export default {
                     maintext: '10 rue du Normand de la Grange aux...',
                     location: 'Paris, 03400',
                     values: [
-                        {id: 1, icon: 'telephone'},
                         {id: 2, icon: 'calendar'}
                     ],
                     badges: [
@@ -176,6 +186,87 @@ export default {
                     },
                     cost: '250 000 € - 265 000 €',
                     costdate: 'le 20/02/2021'
+                },
+                {
+                    maintext: '10 rue du Normand de la Grange aux...',
+                    location: 'Paris, 03400',
+                    values: [
+                        {id: 1, icon: 'telephone'},
+                        {id: 2, icon: 'calendar'}
+                    ],
+                    badges: [
+                        {id: 1, icon: 'telephone', text: 'Porte à porte dans les 24h'}
+                    ],
+                    contact: {
+                        text: '06 59 30 29 93',
+                        verified: true
+                    },
+                    home: {
+                        text: '< 6 mois',
+                        icon: 'home'
+                    },
+                    cost: '250 000 € - 265 000 €',
+                    costdate: 'le 20/02/2021'
+                },
+                {
+                    maintext: '10 rue du Normand de la Grange aux...',
+                    location: 'Paris, 03400',
+                    values: [
+                        {id: 1, icon: 'telephone'},
+                        {id: 2, icon: 'calendar'}
+                    ],
+                    badges: [
+                        {id: 1, icon: 'telephone', text: 'Porte à porte dans les 24h'}
+                    ],
+                    contact: {
+                        text: '06 59 30 29 93',
+                        verified: false
+                    },
+                    home: {
+                        text: '< 6 mois',
+                        icon: 'home'
+                    },
+                    cost: '250 000 € - 265 000 €',
+                    costdate: 'le 20/02/2021'
+                },
+                {
+                    maintext: '10 rue du Normand de la Grange aux...',
+                    location: 'Paris, 03400',
+                    values: [],
+                    badges: [
+                        {id: 1, icon: 'telephone', text: 'Porte à porte dans les 24h'},
+                        {id: 2, icon: 'door', text: 'Porte à porte dans les 24h'}
+                    ],
+                    contact: {
+                        text: '06 59 30 29 93',
+                        verified: false
+                    },
+                    home: {
+                        text: '< 6 mois',
+                        icon: 'home'
+                    },
+                    cost: '250 000 € - 265 000 €',
+                    costdate: 'le 20/02/2021'
+                }
+            ],
+            contacts: [
+                {
+                    id: 1,
+                    maintext: '158 Avenue Paul Santy, 69400',
+                    contact: '+33 6 54 95 21 45',
+                    duration: 'Aujourd’hui à 11 h'
+                },
+                {
+                    id: 2,
+                    maintext: '158 Avenue Paul Santy, 69400',
+                    contact: '+33 6 54 95 21 45',
+                    duration: 'Aujourd’hui à 11 h'
+                },
+                {
+                    id: 3,
+                    maintext: '158 Avenue Paul Santy, 69400',
+                    contact: '+33 6 54 95 21 45',
+                    duration: 'Aujourd’hui à 11 h'
                 }
             ]
         }

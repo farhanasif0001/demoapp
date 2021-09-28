@@ -60,7 +60,7 @@
         margin-bottom: 5px;
     }
     .item > .card-body {
-        padding: 1rem;
+        padding: 0.5rem;
     }
     .maintext {
         font-size: 14px;

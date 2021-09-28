@@ -3,12 +3,14 @@
     "name": "dashboard",
     "path": "/dashboard",
     "component": "/Users/imranalikhan/Desktop/mywork/onlinedemoapp/demoapp/pages/dashboard.vue",
-    "chunkName": "pages/dashboard"
+    "chunkName": "pages/dashboard",
+    "_name": "_bd7fe2a2"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/imranalikhan/Desktop/mywork/onlinedemoapp/demoapp/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_54999126"
   }
 ]

@@ -10,5 +10,8 @@
   },
   "Item": {
     "description": "Auto imported from components/Item.vue"
+  },
+  "RightBox": {
+    "description": "Auto imported from components/RightBox.vue"
   }
 }
